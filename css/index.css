@@ -1,0 +1,112 @@
+@import 'reset.css';
+
+/* 头部导航条 */
+#nav{
+   width: 100%;
+   height: 35px;
+   line-height: 35px;
+   background-color: #262626;
+   padding: 10px 0;
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   /* 三条属性设置导航栏固定 */
+   z-index: 3;
+}
+#nav .nav-content{
+    width: 700px;
+    height: 35px;
+    margin:0 auto;
+    /* 使内容区宽度随页面大小自动缩放 */
+    background-color:#262626;
+}
+#nav li{
+    width: 140px;
+    text-align: center;
+}
+#nav a{
+    font-size: 15px;
+    color: #EEEEEE;
+    margin: 0px 40px;
+    padding: 5px 0px;
+}
+#nav .login{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+/* 轮播图 */
+#banner{
+    width: 1280px;
+    height: 600px;
+    margin-top: 55px;
+    margin-left: 0px;
+    overflow: hidden;
+    /* 把图片横向排列，并隐藏溢出部分 */
+    position: relative;
+}
+#bannerImg{
+    /* 四张图片宽度1280*4=5120 */
+    width: 5120px;
+    height: 600px;
+}
+#bannerImg img{
+    width: 1280px;
+    height: 600px;
+    display: block;
+}
+#bannerNum{
+    width: 112px;
+    height: 32px;
+    position: absolute;
+    /* 相对于父级定位 */
+    bottom: 10px;
+    left: 50%;
+    margin-left: -56px;
+    /* 居中显示 */
+    /* border: 1px solid red; */
+}
+#bannerNum li{
+    float: left;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    background-color: #EEEEEE;
+    color: #262626;
+    cursor: pointer;
+}
+#banner em{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -122px;
+    color:orange;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: serif;
+}
+#banner .call{
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    margin-left: -41px;
+}
+#banner .call a{
+    color: orange;
+    font-size: 20px;
+    font-family: serif;
+    font-style: italic;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40%;
+}
+#banner .call a:hover{
+    border-radius: 40%;
+    background-color: #eee;
+}
+
