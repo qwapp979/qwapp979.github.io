@@ -1,13 +1,16 @@
 // 轮播图
  window.onload=function ban(){
+    //  获取图片项
     var imgs=document.getElementById("bannerImg").getElementsByTagName("li");
+    // 获取下方编号项
     var nums=document.getElementById("bannerNum").getElementsByTagName("li");
+
     var left=0;
     var timmer;
 
-    run();
+    
     function run(){
-        // 1280*3
+        // 1280*3 当三张图片都移动完，设置左边距为初始值
         if(left<=-3840){
             bannerImg.style.marginLeft="0px";
             left=0;
@@ -21,6 +24,7 @@
         left-=10;
         timer=setTimeout(run,n);
     }
+    run();
     function changeImg(){
         bannerImg.style.marginLeft=left+"px";
     }

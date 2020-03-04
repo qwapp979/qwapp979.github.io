@@ -97,7 +97,7 @@
     margin-left: -41px;
 }
 #banner .call a{
-    color: orange;
+    color: #ffA33E;
     font-size: 20px;
     font-family: serif;
     font-style: italic;
@@ -109,4 +109,188 @@
     border-radius: 40%;
     background-color: #eee;
 }
+
+/* 关于我们 */
+#aboutUs{
+    width: 1280px;
+    height: 500px;
+    margin-top: 100px;
+}
+#aboutUs .left{
+    position: absolute;
+    left: 0;
+    width: 340px;
+    height: 450px;
+    margin-left: 5px;
+}
+#aboutUs .center{
+    position: absolute;
+    left: 330px;
+    right: 330px;
+    height: 450px;
+    padding: 100px 100px;
+}
+#aboutUs .center h3::after{
+    content: '';
+    width: 80px;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    margin-left: -76px;
+    margin-bottom: -16px;
+}
+#aboutUs .center p{
+    font-size: 16px;
+    margin-top: 50px;
+    text-indent: 2em;
+}
+#aboutUs .center a{
+    color: #ee0427;
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 70px;
+    padding-left: 250px;
+  }
+#aboutUs .right{
+    position: absolute;
+    right: 0;
+    width: 330px;
+    height: 450px;
+    margin-right: 7px;
+}
+#aboutUs img{
+    width: 330px;
+    height: 400px;
+    margin: 25px 0px;
+}
+/* 导入自定义字体，即小图标
+    1.https://www.iconfont.cn/搜索添加素材并加到购物车，下载代码
+    2.打开压缩包的html文件
+    3.根据手册步骤引入
+    4.复制@font-face部分以及.iconfont部分
+    5.把压缩包里面五个文件添加到项目font文件夹里面
+    6.修改@font-face文件目录
+    7.在需要的位置添加<span class="iconfont">unicode编码</span>
+ */
+ @font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+ /* 门店展示 */
+#unLineShop{
+    width: 1280px;
+    height: 450px;
+    /* background-color: red; */
+}
+#unLineShop iframe{
+    padding-top: 20px;
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    right: 15px;
+}
+
+/* 菜单 */
+#menu{
+    width: 1280px;
+    height: 1000px;
+    padding: 10px 0px;
+}
+#menu  h3{
+    text-align: center;
+}
+#menu  h3::after{
+    content: '';
+    width: 60px;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    margin-left: -50px;
+    margin-bottom: -16px;
+}
+#menu .box{
+    margin: 20px 150px;
+}
+#menu .box tr td{
+    width: 300px;
+    height: 300px;
+    padding :5px;
+}
+#menu .box tr td img{
+    width: 100%;
+    height: 100%;
+}
+#menu .box tr td a{
+   color: #ee0427;
+   margin-left: 100px;
+   text-align: center;
+}
+
+
+/* 联系我们 */
+
+#contactUs{
+    width: 1280px;
+    height: 300px;
+    margin: 100px 0px 0px;
+    background-color: #333333;
+}
+#contactUs .left{
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 220px;
+    text-align: center;
+    padding-top: 80px;
+}
+#contactUs .center{
+    position: absolute;
+    left: 400px;
+    right: 400px;
+    height: 220px;
+    text-align: center;
+    padding-top: 80px;
+}
+#contactUs .right{
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 220px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#contactUs h3 {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin:10px 0px;
+} 
+#contactUs p {
+    color: #777777;
+    font-size: 14px;
+} 
+#contactUs a {
+    color: #aaaaaa;
+    font-size: 18px;
+    border: 1px solid orange;
+    border-radius: 20%;
+    padding: 3px;
+} 
+
+
+
+
 

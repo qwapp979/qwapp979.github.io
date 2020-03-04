@@ -12,5 +12,7 @@ a{
     text-decoration: none;
 }
 .clearF{
+    content:'';
+    display: block;
     clear: both;
 }
